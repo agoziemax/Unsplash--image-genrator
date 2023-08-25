@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import './SearchBar.css'
+import './SearchBar.css';
 
 function SearchBar({ onSubmit }) {
   const [input, setInput] = useState('');
@@ -12,6 +12,7 @@ function SearchBar({ onSubmit }) {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     onSubmit(input);
+    console.log(onSubmit);
   };
 
   return (
